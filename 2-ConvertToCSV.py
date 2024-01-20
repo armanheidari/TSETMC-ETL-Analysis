@@ -183,10 +183,10 @@ if __name__ == "__main__":
     parser = ArgumentParser(
         description="Converts the Excel data to csv files.")
 
-    parser.add_argument("-sp", "--stage_path", type=str,
+    parser.add_argument("-s", "--stage_path", type=str,
                         help="Path to the stage directory (Do not specify if the stage folder is in the current directory)")
 
-    parser.add_argument('-dp', '--datalake_path', type=str,
+    parser.add_argument('-p', '--datalake_path', type=str,
                         help="The path to the datalake folder (do not specify if you want to create a datalake directory in the current path)")
 
     parser.add_argument("-d", "--delete", type=str, choices=[
