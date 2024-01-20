@@ -276,7 +276,7 @@ if __name__ == "__main__":
     parser = ArgumentParser(
         description="Analyze the csv data from the datalake.")
 
-    parser.add_argument('-sp', '--datalake_path', type=str,
+    parser.add_argument('-p', '--datalake_path', type=str,
                         help="The path to the data lake folder (do not specify if the data lake is in the current directory)")
 
     parser.add_argument('-a', '--analyze_number', type=int,
