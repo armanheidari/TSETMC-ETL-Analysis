@@ -22,10 +22,8 @@ class Logger:
         error_loc = os.path.join(log, f"{filename}-error.log")
         info_loc = os.path.join(log, f"{filename}-info.log")
 
-        error_handler = logging.FileHandler(
-            error_loc, mode="w")
-        info_handler = logging.FileHandler(
-            info_loc, mode="w")
+        error_handler = logging.FileHandler(error_loc)
+        info_handler = logging.FileHandler(info_loc)
 
         error_formatter = logging.Formatter(
             fmt="%(asctime)s - %(levelname)s at line %(lineno)d: %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
